@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #0ea5e9, #7e22ce);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(14, 165, 233, 0.2);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(90deg, #0ea5e9, #7e22ce);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.active::after {
+    width: 100%;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    left: -7.5px;
+    top: 0;
+    background: linear-gradient(135deg, #0ea5e9, #7e22ce);
+}
+
+.skill-bar {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #1e293b;
+}
+
+.skill-progress {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #0ea5e9, #7e22ce);
+    transition: width 1s ease-in-out;
+}
+
+/* ❌ project-card CSS REMOVED */
+
+.contact-input {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #0ea5e9, #7e22ce);
+}
+
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+/* Social icons hover effect */
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+/* GitHub & LinkedIn hover blue */
+.social-icon:hover {
+    background-color: #2563eb; /* Blue */
+    color: #ffffff;
+}
+
+/* Icon color white on hover */
+.social-icon:hover i {
+    color: #ffffff;
+}
+/* ================= BUTTONS COMMON STYLE ================= */
+.btn-primary,
+.btn-outline {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* ================= PRIMARY BUTTON (Hire Me, Download CV) ================= */
+.btn-primary {
+    background: linear-gradient(90deg, #0ea5e9, #7e22ce);
+    color: #ffffff;
+}
+
+/* Hover effect */
+.btn-primary:hover {
+    background: linear-gradient(90deg, #7e22ce, #0ea5e9);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(14, 165, 233, 0.35);
+}
+
+/* ================= OUTLINE BUTTON (View Work, Contact Me) ================= */
+.btn-outline {
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+    background: transparent;
+}
+
+/* Hover effect */
+.btn-outline:hover {
+    background: #38bdf8;
+    color: #020617;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.35);
+}
+
+/* ================= BUTTON CLICK EFFECT ================= */
+.btn-primary:active,
+.btn-outline:active {
+    transform: scale(0.97);
+}
