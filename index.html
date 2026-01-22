@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -74,9 +75,9 @@
             </p>
 
             <div class="flex space-x-4">
-                <a href="cv/Irfan_CV.pdf"download class="px-6 py-3 rounded-full btn-primary font-medium">Download CV</a>
+                <a href="cv/IrfanCV.pdf"download class="px-6 py-3 rounded-full btn-primary font-medium">Download CV</a>
                 <a href="#projects"class="px-6 py-3 rounded-full btn-outline font-medium">View Work</a>
-                
+
             </div>
 
             <div class="flex mt-8 space-x-4">
@@ -145,7 +146,7 @@
                     </div>
                     
                     <div class="flex space-x-4">
-                        <a href="cv/Irfan_CV.pdf"download class="px-6 py-3 rounded-full btn-primary font-medium">Download CV</a>
+                        <a href="cv/IrfanCV.pdf"download class="px-6 py-3 rounded-full btn-primary font-medium">Download CV</a>
                         <a href="#contact"class="px-6 py-3 rounded-full btn-outline font-medium">Contact Me</a>
  </div>
             </div>
@@ -266,6 +267,12 @@
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
 
         <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
+            <i class="fab fa-python text-4xl text-yellow-400 mb-2"></i>
+            <span>Python</span>
+        </div>
+
+
+        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
             <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
             <span>HTML5</span>
         </div>
@@ -276,8 +283,23 @@
         </div>
 
         <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
-            <i class="fab fa-python text-4xl text-yellow-400 mb-2"></i>
-            <span>Python</span>
+            <i class="fas fa-chart-line text-4xl text-red-400 mb-2"></i>
+            <span>Streamlit</span>
+        </div>
+
+        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
+            <i class="fas fa-book-open text-4xl text-orange-400 mb-2"></i>
+            <span>Jupyter Notebook</span>
+        </div>
+
+        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
+            <i class="fas fa-code text-4xl text-sky-400 mb-2"></i>
+            <span>VS Code</span>
+        </div>
+
+        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
+            <i class="fas fa-rocket text-4xl text-green-400 mb-2"></i>
+            <span>Antigravity</span>
         </div>
 
         <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
@@ -291,20 +313,6 @@
         </div>
 
         <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
-            <i class="fas fa-chart-line text-4xl text-red-400 mb-2"></i>
-            <span>Streamlit</span>
-        </div>
-
-        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
-            <i class="fas fa-book-open text-4xl text-orange-400 mb-2"></i>
-            <span>Jupyter Notebook</span>
-        </div>
-        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
-            <i class="fas fa-code text-4xl text-sky-400 mb-2"></i>
-            <span>VS Code</span>
-        </div>
-
-        <div class="flex flex-col items-center p-6 bg-slate-800 rounded-lg card-hover">
     <i class="fas fa-laptop-code text-4xl text-purple-400 mb-2"></i>
     <span>Visual Studio</span>
 
@@ -313,14 +321,55 @@
 </div>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-[#020617] text-slate-200">
+<section id="projects" class="py-20 bg-[#020617] text-slate-200">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">My <span class="gradient-text">Projects</span></h2>
                 <div class="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
             </div>
+
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">  
+             <!-- Project 1--> 
+             <div class="project-card rounded-xl overflow-hidden card-hover">
+                    <div class="h-48 overflow-hidden">
+                 <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1470&q=80"
+                    alt="House Price Prediction Project"
+                    class="w-full h-full object-cover">
+                    </div>
+
+                 <div class="p-6">
+                     <h3 class="text-xl font-bold mb-2">House Price Prediction Pakistan</h3>
+
+                     <p class="text-slate-400 mb-4">
+                      An end-to-end machine learning web application that predicts house prices
+                     in Pakistan based on area (Marla), bedrooms, bathrooms, city, and location.
+                      Built with Python, scikit-learn, and Streamlit. </p>
+
+                     <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Python</span>
+                             <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Machine Learning</span>
+                             <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">scikit-learn</span>
+                             <span class="px-3 py-1 bg-slate-700 rounded-full text-sm">Streamlit</span>
+                        </div>
+
+                            <div class="flex space-x-4 project-links">
+                                    <a href="https://house-price-prediction-pakistan-iub.streamlit.app/"
+                                 target="_blank"
+                                    class="text-primary hover:text-secondary">
+                                 <i class="fas fa-external-link-alt"></i> Live Demo </a>
+
+                                 <a href="https://github.com/irfanuddinbaig16-iub/house-price-prediction-pakistan"
+                                  target="_blank"
+                                  class="text-primary hover:text-secondary">
+                                  <i class="fab fa-github"></i> Code</a>
+                            </div>
+                    </div>
+               
+                 </div>
+
+            </div>
         </div>
-    </section>
+</section>
      
 <!-- Contact Section -->
     <section id="contact" class="py-20 bg-dark">
@@ -473,5 +522,4 @@
 
 </body>
 </html>
-
-
+>>>>>>> 6996d79 (Update portfolio with ML project and links)

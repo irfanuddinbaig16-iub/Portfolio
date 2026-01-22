@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 body {
@@ -148,3 +149,25 @@ body {
 .btn-outline:active {
     transform: scale(0.97);
 }
+
+/* Project Card Base */
+.project-card {
+  background: linear-gradient(
+    145deg,
+    rgba(15, 23, 42, 0.95),
+    rgba(30, 41, 59, 0.95)
+  );
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  transition: all 0.35s ease;
+}
+
+/* Hover effect */
+.project-links a:hover {
+  color: #22c55e; /* green */
+  transform: translateY(-2px);
+}
+
+.project-links a:hover i {
+  transform: scale(1.2);
+}
+
